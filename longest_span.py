@@ -43,7 +43,7 @@ for line in fileinput.input():
     if is_longest_span(bed_dict, longest_spans):
       set_longest_span(bed_dict, longest_spans)
 
-# Now print!
+# Now print all of the longest spans:
 for chrom in longest_spans:
   print_bed(longest_spans[chrom])
   
